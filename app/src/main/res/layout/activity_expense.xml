@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_expense"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/holo_blue_light"
+    tools:context="com.example.dell.expensetracker.ExpenseActivity">
+
+    <TextView
+        android:text="Transport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textView_transport"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp"
+        android:paddingTop="10dp"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_transport"
+        android:layout_toRightOf="@id/textView_transport"
+        android:layout_marginTop="34dp"
+        android:layout_marginLeft="50dp"
+        android:paddingTop="20dp"
+        android:text="0"
+        />
+    <TextView
+        android:text="Entertainment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textView_entertainment"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="100dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_entertainment"
+        android:layout_toRightOf="@id/textView_entertainment"
+        android:layout_marginTop="92dp"
+        android:layout_marginLeft="40dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:text="Groceries:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textView_groceries"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="158dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_groceries"
+        android:layout_toRightOf="@id/textView_groceries"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:text="Food:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textView_food"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="216dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_food"
+        android:layout_toRightOf="@id/textView_food"
+        android:layout_marginTop="208dp"
+        android:layout_marginLeft="50dp"
+        android:text="0"
+        />
+
+    <TextView
+        android:text="Utilities:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:id="@+id/textView_utilities"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="274dp"
+        android:textSize="20sp" />
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText_utilities"
+        android:layout_toRightOf="@id/textView_utilities"
+        android:layout_marginTop="266dp"
+        android:layout_marginLeft="50dp"
+        android:text="0"
+        />
+
+
+    <TextView
+        android:text="ADD EXPENSE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView_title"
+        android:textSize="30dp"/>
+
+    <Button
+        android:text="Add Expense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:onClick="addExpense"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView_groceries"
+        android:layout_alignStart="@+id/textView_groceries"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="66dp" />
+
+
+</RelativeLayout>
